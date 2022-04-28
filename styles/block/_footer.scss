@@ -1,0 +1,7 @@
+.footer-sections {
+	background-color: $mediumGrey;
+
+	&__container {
+		@include flexCenter(column, space-around, flex-start);
+	}
+}
