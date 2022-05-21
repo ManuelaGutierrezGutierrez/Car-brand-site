@@ -1,0 +1,70 @@
+.models {
+	@include flexCenter(column, center, center);
+	margin-top: 100px;
+
+	&__title {
+		display: flex;
+		justify-content: flex-start;
+		margin-left: 10px;
+		margin-bottom: 10px;
+		width: 70%;
+		color: $greyText;
+	}
+}
+
+.carList {
+	background: transparent;
+	width: 70%;
+
+	ul {
+		@include flexCenter(row, space-between, center);
+
+		li {
+			margin: 10px;
+			font-weight: bold;
+			font-size: 1.25rem;
+			color: $greyText;
+		}
+
+		.blackText {
+			color: black;
+			font-size: 1.75rem;
+		}
+	}
+}
+
+.carShop {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	width: 70%;
+
+	&__item {
+		@include flexCenter(column, flex-start, flex-start);
+		margin: 10px;
+
+		.carShop__img {
+			width: 100%;
+		}
+
+		.carShop__title {
+			font-weight: bold;
+			font-size: 1rem;
+		}
+
+		.carShop__price {
+			font-weight: bold;
+			color: $greyText;
+			margin-bottom: 20px;
+		}
+
+		.carShop__options {
+			font-weight: bold;
+			margin: 5px 0px;
+
+			&::before {
+				content: "> ";
+				color: black;
+			}
+		}
+	}
+}

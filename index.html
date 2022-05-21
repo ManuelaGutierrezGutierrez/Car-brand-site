@@ -12,47 +12,193 @@
 		></script>
 	</head>
 	<body>
-		<header>
-			<!-- Barra de navegación -->
+		<!-- <header> -->
 
-			<nav>
+		<div class="home">
+			<!-- Barra de navegación -->
+			<!-- Div con la barra y la sección del logo -->
+			<div class="header-container">
+				<nav>
+					<ul>
+						<li>
+							<a href="#">Modelos</a>
+						</li>
+						<li>
+							<a href="#">Promociones</a>
+						</li>
+						<li>
+							<a href="#">Servicios</a>
+						</li>
+						<li>
+							<a href="#">Universo <span class="uppercase-span">bmw</span></a>
+						</li>
+					</ul>
+				</nav>
+
+				<!-- Enlaces y logo -->
+
+				<div class="header-container__icons">
+					<i class="fa-solid fa-magnifying-glass"></i>
+					<i class="fa-solid fa-user"></i>
+					<i class="fa-solid fa-location-dot"></i>
+					<img src="./assets/logo.png" class="logo" alt="logo" />
+				</div>
+			</div>
+			<div class="title-container">
+				<h1>Tu bmw con disponibilidad inmediata</h1>
+				<h2>vehículos nuevos en stock</h2>
+				<button>Descúbrelo</button>
+			</div>
+			<!-- </div> -->
+			<!-- </header> -->
+		</div>
+
+		<!-- Sección models - escaparate de coches -->
+
+		<section class="models">
+			<h2 class="models__title">Series</h2>
+
+			<!-- Barra de navegación de tipos de coche -->
+
+			<nav class="carList">
 				<ul>
-					<li>
-						<a href="#">Modelos</a>
-					</li>
-					<li>
-						<a href="#">Promociones</a>
-					</li>
-					<li>
-						<a href="#">Servicios</a>
-					</li>
-					<li>
-						<a href="#">Universo BMW</a>
-					</li>
+					<li><span class="blackText">Cabrio</span></li>
+					<li>Berlina</li>
+					<li>Compacto</li>
+					<li>Coupé</li>
+					<li>BMW</li>
+					<li>Todocamino</li>
+					<li>Touring</li>
+					<li>Roadster</li>
 				</ul>
 			</nav>
-		</header>
 
-		<!-- Sección catalog -->
+			<!-- Escaparate de coches -->
 
-		<section></section>
+			<div class="carShop">
+				<div class="carShop__item">
+					<img class="carShop__img" src="./assets/car1.png" alt="foto coche" />
+					<p class="carShop__title">BMW Serie 2 Cabrio</p>
+					<p class="carShop__price">Desde 39.000€</p>
+					<p class="carShop__options">Configurar</p>
+					<p class="carShop__options">Explorar</p>
+				</div>
 
-		<!-- Sección news o media -->
+				<div class="carShop__item">
+					<img class="carShop__img" src="./assets/car2.png" alt="foto coche" />
+					<p class="carShop__title">BMW Serie 4 Cabrio</p>
+					<p class="carShop__price">Desde 52.900€</p>
+					<p class="carShop__options">Configurar</p>
+					<p class="carShop__options">Explorar</p>
+				</div>
 
-		<section>
-			<div class="articles">
-				<div>Visita Virtual BMW</div>
-				<div>Vehículos nuevos en stock</div>
-				<div>Vehículos de ocasión</div>
-				<div>Cita online taller</div>
-			</div>
-			<div class="videos">
-				<div>Categorías Vehículos BMW</div>
-				<div>Todo BMW en Youtube</div>
+				<div class="carShop__item">
+					<img class="carShop__img" src="./assets/car3.png" alt="foto coche" />
+					<p class="carShop__title">Nuevo BMW Serie 8 Cabrio</p>
+					<p class="carShop__price">Desde 121.400€</p>
+					<p class="carShop__options">Configurar</p>
+					<p class="carShop__options">Explorar</p>
+				</div>
+
+				<div class="carShop__item">
+					<img class="carShop__img" src="./assets/car4.png" alt="foto coche" />
+					<p class="carShop__title">BMW M240i Cabrio</p>
+					<p class="carShop__price">Desde 61.550€</p>
+					<p class="carShop__options">Configurar</p>
+					<p class="carShop__options">Explorar</p>
+				</div>
+
+				<div class="carShop__item">
+					<img class="carShop__img" src="./assets/car5.png" alt="foto coche" />
+					<p class="carShop__title">Nuevo BMW M4 Cabrio</p>
+					<p class="carShop__price">Desde 106.900€</p>
+					<p class="carShop__options">Configurar</p>
+					<p class="carShop__options">Explorar</p>
+				</div>
 			</div>
 		</section>
 
-		<!-- Sección de anchors con iconos -->
+		<!-- Sección 3 news o media -->
+
+		<section class="section3">
+			<div class="media-container">
+				<div class="news-container">
+					<img
+						src="./assets/bmw-car-1.jpg"
+						class="news-container__photo"
+						alt="foto coche bmw"
+					/>
+					<p class="news-container__title">Visita Virtual BMW</p>
+					<p class="news-container__text">
+						Tu BMW con disponibilidad inmediata.
+					</p>
+					<a href="#">Contacta en directo</a>
+				</div>
+				<div class="news-container">
+					<img
+						src="./assets/bmw-car-2.jpg"
+						class="news-container__photo"
+						alt="foto coche bmw"
+					/>
+					<p class="news-container__title">Vehículos en stock</p>
+					<p class="news-container__text">
+						Tu BMW con disponibilidad inmediata.
+					</p>
+					<a href="#">Ir al buscador</a>
+				</div>
+				<div class="news-container">
+					<img
+						src="./assets/bmw-car-3.jpg"
+						class="news-container__photo"
+						alt="foto coche bmw"
+					/>
+					<p class="news-container__title">Vehículos de ocasión</p>
+					<p class="news-container__text">
+						Tu BMW con disponibilidad inmediata.
+					</p>
+					<a href="#">Lo quiero</a>
+				</div>
+				<div class="news-container">
+					<img
+						src="./assets/bmw-car-4.jpg"
+						class="news-container__photo"
+						alt="foto coche bmw"
+					/>
+					<p class="news-container__title">CITA ONLINE TALLER</p>
+					<p class="news-container__text">
+						Tu BMW con disponibilidad inmediata.
+					</p>
+					<a href="#">Pide tu cita</a>
+				</div>
+			</div>
+
+			<div class="video-container">
+				<div class="video-container__item">
+					<img
+						class="video-container__item-photo"
+						src="./assets/video-car-1.jpg"
+						alt="coche BMW"
+					/>
+					<p class="video-container__item-title">Categorías Vehículos BMW</p>
+					<a href="#">Más información</a>
+				</div>
+
+				<div class="video-container__item">
+					<iframe
+						class="video-container__video"
+						src="https://www.youtube.com/embed/Xt9uLZ_pPLs"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen
+					></iframe>
+					<p class="video-container__item-title">Categorías Vehículos BMW</p>
+					<a href="#">Más información</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Sección de links en caja -->
 
 		<div class="links-section">
 			<div class="links-section__container">
@@ -186,11 +332,17 @@
 					<p>© BMW ES 2018</p>
 				</div>
 				<div class="footer-links__container">
-					<a href="#">Cookies</a>
-					<a href="#">Aviso legal</a>
-					<a href="#">Política de Privacidad</a>
-					<a href="#">Condiciones de Uso en RRSS</a>
-					<a href="#">Política de Privacidad RRSS</a>
+					<a href="#" class="footer-links__container--item">Cookies</a>
+					<a href="#" class="footer-links__container--item">Aviso legal</a>
+					<a href="#" class="footer-links__container--item"
+						>Política de Privacidad</a
+					>
+					<a href="#" class="footer-links__container--item"
+						>Condiciones de Uso en RRSS</a
+					>
+					<a href="#" class="footer-links__container--item"
+						>Política de Privacidad RRSS</a
+					>
 				</div>
 			</div>
 		</footer>

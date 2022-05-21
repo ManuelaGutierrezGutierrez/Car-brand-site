@@ -1,7 +1,38 @@
 .footer-sections {
+	@include flexCenter(row, space-around, flex-start);
 	background-color: $mediumGrey;
 
 	&__container {
-		@include flexCenter(column, space-around, flex-start);
+		margin: 75px 0px;
+	}
+
+	&__container h4 {
+		margin-bottom: 10px;
+	}
+
+	a {
+		font-size: $littleText;
+		color: black;
+	}
+}
+
+.footer-copy {
+	@include flexCenter(row, space-around, center);
+
+	&__container {
+		margin-top: 20px;
+		font-size: $littleText;
+	}
+}
+
+.footer-links__container {
+	margin-top: 20px;
+
+	a {
+		font-size: $littleText;
+	}
+
+	&--item {
+		margin: 10px;
 	}
 }

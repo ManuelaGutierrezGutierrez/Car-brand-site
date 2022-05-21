@@ -1,0 +1,18 @@
+.links-section {
+	@include flexCenter(row, center, center);
+}
+
+.links-section__container {
+	margin: 20px 5px;
+	padding: 20px 40px;
+	background-color: $softGrey;
+
+	a {
+		@include flexCenter(column, center, center);
+		color: black;
+	}
+
+	i {
+		margin-bottom: 10px;
+	}
+}

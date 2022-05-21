@@ -1,0 +1,70 @@
+.home {
+	background-image: url(../../assets/imagen-cabecera.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	min-height: 70vh;
+	display: flex;
+	flex-direction: column;
+}
+
+// Barra de navegación
+
+.header-container {
+	@include flexCenter(row, space-between, center);
+	margin-bottom: 300px;
+
+	nav {
+		margin-left: 30px;
+		font-weight: bold;
+		border-bottom: 0.75px solid white;
+
+		ul {
+			display: flex;
+
+			li {
+				padding: 5px;
+				margin: 10px 0px 0px 60px;
+
+				a {
+					color: $primary;
+				}
+			}
+		}
+	}
+
+	&__icons {
+		@include flexCenter(row, center, center);
+
+		i {
+			color: $primary;
+			padding: 10px 15px;
+		}
+
+		.logo {
+			width: 10%;
+		}
+	}
+}
+
+.title-container {
+	margin-left: 40px;
+
+	h1 {
+		color: $primary;
+		text-transform: uppercase;
+	}
+
+	h2 {
+		color: $primary;
+		text-transform: uppercase;
+	}
+
+	button {
+		background-color: $mediumBlue;
+		margin-top: 20px;
+		padding: 10px 50px;
+		color: $primary;
+		border: none;
+	}
+}
